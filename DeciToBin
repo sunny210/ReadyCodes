@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
+
+using namespace std;
+int main()
+{   
+  int t;
+  cin>>t;
+  while(t--){
+      char str[32]="0";
+      int n,rem,i;
+      cin>>n;
+      i=0;
+      while(n>0){
+        rem=n%2;
+        str[i]=rem+'0';
+        n=n/2; 
+        i++;
+      }
+     strrev(str);
+      cout<<str<<endl;
+      
+  }
+}
